@@ -24,8 +24,12 @@ mixin _$CarWithFreezed {
   String get model => throw _privateConstructorUsedError;
   int get year => throw _privateConstructorUsedError;
 
+  /// Serializes this CarWithFreezed to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CarWithFreezed
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CarWithFreezedCopyWith<CarWithFreezed> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -49,6 +53,8 @@ class _$CarWithFreezedCopyWithImpl<$Res, $Val extends CarWithFreezed>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CarWithFreezed
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -92,6 +98,8 @@ class __$$CarWithFreezedImplCopyWithImpl<$Res>
       _$CarWithFreezedImpl _value, $Res Function(_$CarWithFreezedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CarWithFreezed
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -147,11 +155,13 @@ class _$CarWithFreezedImpl implements _CarWithFreezed {
             (identical(other.year, year) || other.year == year));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, make, model, year);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CarWithFreezed
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CarWithFreezedImplCopyWith<_$CarWithFreezedImpl> get copyWith =>
@@ -181,8 +191,11 @@ abstract class _CarWithFreezed implements CarWithFreezed {
   String get model;
   @override
   int get year;
+
+  /// Create a copy of CarWithFreezed
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CarWithFreezedImplCopyWith<_$CarWithFreezedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
