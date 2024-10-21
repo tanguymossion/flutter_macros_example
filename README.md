@@ -27,7 +27,7 @@ flutter pub get
 To run the project use:
 
 ```bash
-dart run --enable-experiment=macros lib/main.dart
+flutter run --enable-experiment=macros lib/main.dart
 ```
 
 ## Comparison
